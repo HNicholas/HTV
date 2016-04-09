@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIView+Extension.h"
+#import "HTInfoBtnView.h"
 
 
 @protocol HTLeftMenuDelegate <NSObject>
@@ -21,6 +22,7 @@
 
 @interface HTLeftMenu : UIView
 
+@property(nonatomic,strong) HTInfoBtnView * userInfo;
 @property(nonatomic,weak) id<HTLeftMenuDelegate> delegate;
 
 @end

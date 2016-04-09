@@ -23,8 +23,16 @@
 
 -(void)awakeFromNib
 {
+    //圆形头像
+    self.UserIcon.layer.cornerRadius=self.UserIcon.frame.size.width/2;
+    self.UserIcon.layer.masksToBounds=YES;
+    self.UserIcon.layer.shouldRasterize=YES;
+    self.UserIcon.layer.borderColor=[UIColor whiteColor].CGColor;
+    self.UserIcon.layer.borderWidth=2;
+    
+    
     self.UserName.text=@"用户名";
-    //给view添加一个手势
+    //给头像view添加一个手势
     [self addGestureRecognizer];
     
     
@@ -41,9 +49,9 @@
 
 -(void)Actiondo
 {
-  if ([self.delegate respondsToSelector:@selector(viewDidClick)])
+  if ([self.delegate respondsToSelector:@selector(userIconViewDidClick)])
   {
-      [self.delegate viewDidClick];
+      [self.delegate userIconViewDidClick];
   
   }
       

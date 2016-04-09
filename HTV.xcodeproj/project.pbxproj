@@ -297,7 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				354F24281C79AB9B00B56EE8 /* Controller */,
-				354F24291C79AB9B00B56EE8 /* VIew */,
+				354F24291C79AB9B00B56EE8 /* View */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -309,10 +309,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		354F24291C79AB9B00B56EE8 /* VIew */ = {
+		354F24291C79AB9B00B56EE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			name = View;
 			path = VIew;
 			sourceTree = "<group>";
 		};
@@ -458,7 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				354F24461C79B0C400B56EE8 /* Controller */,
-				354F24471C79B0C400B56EE8 /* VIew */,
+				354F24471C79B0C400B56EE8 /* View */,
 			);
 			name = Main;
 			path = ../Main;
@@ -477,7 +478,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		354F24471C79B0C400B56EE8 /* VIew */ = {
+		354F24471C79B0C400B56EE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				354F23FC1C79A95700B56EE8 /* Main.storyboard */,
@@ -487,6 +488,7 @@
 				354F246F1C79D34800B56EE8 /* HTInfoBtnView.m */,
 				354F24711C79D36200B56EE8 /* HTInfoBtnView.xib */,
 			);
+			name = View;
 			path = VIew;
 			sourceTree = "<group>";
 		};

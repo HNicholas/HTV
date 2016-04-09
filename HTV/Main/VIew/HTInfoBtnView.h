@@ -11,7 +11,7 @@
 
 @protocol HTInfoBtnViewDelegate <NSObject>
 
--(void)viewDidClick;
+-(void)userIconViewDidClick;
 
 @end
 

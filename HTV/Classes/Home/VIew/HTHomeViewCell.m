@@ -24,10 +24,16 @@
 
 @implementation HTHomeViewCell
 
+
+
 - (void)awakeFromNib {
     // Initialization code
     self.selectionStyle=UITableViewCellSelectionStyleNone;
     self.userInteractionEnabled=YES;
+    _contentImage.layer.cornerRadius=MIN(_contentImage.frame.size.width, _contentImage.frame.size.height)/2.0f;
+    _contentImage.layer.masksToBounds=YES;
+    _contentImage.layer.shouldRasterize=YES;
+
 }
 
 +(instancetype)homeViewCell

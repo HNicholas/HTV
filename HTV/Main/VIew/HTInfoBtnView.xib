@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,44 +12,41 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Z2-7Z-2Bl" userLabel="UserIcon">
-                    <rect key="frame" x="0.0" y="10" width="73" height="48"/>
+                    <rect key="frame" x="5" y="7" width="44" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="73" id="6Ah-bh-KtC"/>
+                        <constraint firstAttribute="width" constant="44" id="816-GU-opb"/>
+                        <constraint firstAttribute="height" constant="44" id="EwI-QP-shm"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB3-sg-cXE" userLabel="Name">
-                    <rect key="frame" x="83" y="10" width="42" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="Xsq-1C-eqa"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u85-XJ-x6c" userLabel="ID">
-                    <rect key="frame" x="83" y="47" width="42" height="11"/>
+                    <rect key="frame" x="59" y="7" width="42" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgH-fO-3LM">
-                    <rect key="frame" x="179" y="10" width="8" height="48"/>
+                    <rect key="frame" x="139" y="18" width="48" height="22"/>
                     <state key="normal" image="CellArrow.png"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u85-XJ-x6c" userLabel="ID">
+                    <rect key="frame" x="59" y="25" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="bottom" secondItem="u85-XJ-x6c" secondAttribute="bottom" id="BCj-06-a9M"/>
-                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="bottom" secondItem="PgH-fO-3LM" secondAttribute="bottom" id="FNb-x7-WQU"/>
-                <constraint firstItem="u85-XJ-x6c" firstAttribute="top" secondItem="YB3-sg-cXE" secondAttribute="bottom" constant="16" id="JAD-xZ-g6p"/>
-                <constraint firstItem="u85-XJ-x6c" firstAttribute="leading" secondItem="3Z2-7Z-2Bl" secondAttribute="trailing" constant="10" id="NXy-eD-xFs"/>
-                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="top" secondItem="PgH-fO-3LM" secondAttribute="top" id="QCj-Y8-N9y"/>
-                <constraint firstAttribute="bottom" secondItem="3Z2-7Z-2Bl" secondAttribute="bottom" id="QSU-ms-gMr"/>
-                <constraint firstItem="YB3-sg-cXE" firstAttribute="leading" secondItem="u85-XJ-x6c" secondAttribute="leading" id="RC7-4p-wjM"/>
-                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="top" secondItem="Yn1-is-Qoy" secondAttribute="top" constant="10" id="Tvr-oJ-WoY"/>
-                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="leading" secondItem="Yn1-is-Qoy" secondAttribute="leading" id="dFi-S8-YUe"/>
-                <constraint firstItem="PgH-fO-3LM" firstAttribute="leading" secondItem="YB3-sg-cXE" secondAttribute="trailing" constant="54" id="jZT-0t-Rlv"/>
-                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="top" secondItem="YB3-sg-cXE" secondAttribute="top" id="u05-0V-yEG"/>
+                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="leading" secondItem="Yn1-is-Qoy" secondAttribute="leading" constant="5" id="42f-8Y-m8P"/>
+                <constraint firstItem="3Z2-7Z-2Bl" firstAttribute="centerY" secondItem="Yn1-is-Qoy" secondAttribute="centerY" id="9FZ-7R-bAw"/>
+                <constraint firstItem="PgH-fO-3LM" firstAttribute="centerY" secondItem="3Z2-7Z-2Bl" secondAttribute="centerY" id="AQw-Z2-4aE"/>
+                <constraint firstItem="u85-XJ-x6c" firstAttribute="top" secondItem="YB3-sg-cXE" secondAttribute="top" constant="18" id="LcS-Fk-X3v"/>
+                <constraint firstItem="YB3-sg-cXE" firstAttribute="leading" secondItem="3Z2-7Z-2Bl" secondAttribute="trailing" constant="10" id="Qbl-OP-Gv1"/>
+                <constraint firstItem="u85-XJ-x6c" firstAttribute="leading" secondItem="3Z2-7Z-2Bl" secondAttribute="trailing" constant="10" id="aND-CT-bGs"/>
+                <constraint firstAttribute="trailing" secondItem="PgH-fO-3LM" secondAttribute="trailing" id="cCd-TZ-BCb"/>
+                <constraint firstItem="u85-XJ-x6c" firstAttribute="bottom" secondItem="YB3-sg-cXE" secondAttribute="bottom" constant="18.5" id="jcj-zX-JBb"/>
+                <constraint firstItem="YB3-sg-cXE" firstAttribute="top" secondItem="3Z2-7Z-2Bl" secondAttribute="top" id="qSY-A1-h7i"/>
+                <constraint firstItem="PgH-fO-3LM" firstAttribute="leading" secondItem="YB3-sg-cXE" secondAttribute="trailing" constant="38" id="xk2-dG-FEQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -57,7 +54,7 @@
                 <outlet property="UserId" destination="u85-XJ-x6c" id="UUu-uu-DxN"/>
                 <outlet property="UserName" destination="YB3-sg-cXE" id="O3o-kt-aOQ"/>
             </connections>
-            <point key="canvasLocation" x="291.5" y="77"/>
+            <point key="canvasLocation" x="252.5" y="153"/>
         </view>
     </objects>
     <resources>

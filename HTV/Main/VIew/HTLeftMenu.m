@@ -41,9 +41,9 @@
 
 -(void)setupInfoBtn
 {
-    HTInfoBtnView *btnView=[HTInfoBtnView InfoBtn];
-    btnView.UserIcon.image=[UIImage imageNamed:@"me"];
-    [self addSubview:btnView];
+    _userInfo=[HTInfoBtnView InfoBtn];
+    _userInfo.UserIcon.image=[UIImage imageNamed:@"me"];
+    [self addSubview:_userInfo];
 
 }
 

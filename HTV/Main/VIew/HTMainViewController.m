@@ -15,7 +15,7 @@
 #import "HTSetupViewController.h"
 
 
-@interface HTMainViewController ()<HTLeftMenuDelegate>
+@interface HTMainViewController ()<HTLeftMenuDelegate,HTInfoBtnViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 
 @property(nonatomic,strong) HTLeftMenu *leftMenu;
@@ -31,7 +31,9 @@
     if (_leftMenu == nil) {
         HTLeftMenu *leftMenu=[[HTLeftMenu alloc] init];
         leftMenu.delegate=self;
+        leftMenu.userInfo.delegate=self;
         _leftMenu=leftMenu;
+        
     }
     return _leftMenu;
 
@@ -132,6 +134,21 @@
 
 }
 
+
+-(void)userIconViewDidClick
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.delegate = self;
+    
+    //设置选择后的图片可被编辑
+    picker.allowsEditing = YES;
+    [self presentViewController:picker animated:YES completion:nil];
+    
+    [self leftMenuViewButtonClcikFrom:0 to:0];
+
+
+}
 
 
 @end
