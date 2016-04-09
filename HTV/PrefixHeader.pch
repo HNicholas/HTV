@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  HTV
+//
+//  Created by 黄韬 on 16/2/24.
+//  Copyright © 2016年 黄韬. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//全局的绿色主题
+#define HTColor(r, g, b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
+
+//抽屉顶部距离 底部一样
+#define HTScaleTopMargin 10
+
+//导航条的大小
+#define HTNavFrame  self.navigationController.navigationBar.frame
+
+//app的高度
+#define HTAppWidth ([UIScreen mainScreen].bounds.size.width)
+//app的宽度
+#define HTAppHeight ([UIScreen mainScreen].bounds.size.height)
+//抽屉拉出来右边剩余比例
+#define HTZoomScaleRight 0.3
+
+//推荐cell的高度
+#define HTRnmdCellHeight 210.0
+//推荐headView的高度
+#define HTRnmdHeadViewHeight 60.0
+//背景的灰色
+#define HTBackgroundGrayColor HTColor(51, 52, 53)
+//判断系统版本号是否是iOS8以上
+#define iOS8 [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+
+
+#pragma clang diagnostic ignored "-W#warnings"
+
+
+#ifdef DEBUG
+
+#define HTLog(...)  NSLog(__VA_ARGS__)
+
+#else
+
+#define HTLog(...)
+
+#endif
+
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>contentImageName</key>
+		<string>me</string>
+		<key>iconImageName</key>
+		<string>MoreMessage</string>
+		<key>userName</key>
+		<string>awake</string>
+		<key>contentName</key>
+		<string>中国好声音</string>
+	</dict>
+	<dict>
+		<key>contentImageName</key>
+		<string>me</string>
+		<key>iconImageName</key>
+		<string>MoreMessage</string>
+		<key>userName</key>
+		<string>banana</string>
+		<key>contentName</key>
+		<string>日本好声音</string>
+	</dict>
+	<dict>
+		<key>contentImageName</key>
+		<string>me</string>
+		<key>iconImageName</key>
+		<string>MoreMessage</string>
+		<key>userName</key>
+		<string>citycy</string>
+		<key>contentName</key>
+		<string>美国好声音</string>
+	</dict>
+	<dict>
+		<key>contentImageName</key>
+		<string>me</string>
+		<key>iconImageName</key>
+		<string>MoreMessage</string>
+		<key>userName</key>
+		<string>dictonn</string>
+		<key>contentName</key>
+		<string>阿童木吗</string>
+	</dict>
+</array>
+</plist>
